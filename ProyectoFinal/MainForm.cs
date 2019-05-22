@@ -23,5 +23,13 @@ namespace ProyectoFinal
             RegistroUsuario ru = new RegistroUsuario();
             ru.Show();
         }
+
+        private void registroCargoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistroCargo rc = new RegistroCargo();
+            rc.Show();
+        }
+
+     
     }
 }

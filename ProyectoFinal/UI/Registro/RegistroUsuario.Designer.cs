@@ -64,7 +64,7 @@
             // 
             this.NivelUsergroupBox.Controls.Add(this.UserradioButton);
             this.NivelUsergroupBox.Controls.Add(this.AdminradioButton);
-            this.NivelUsergroupBox.Location = new System.Drawing.Point(99, 90);
+            this.NivelUsergroupBox.Location = new System.Drawing.Point(99, 97);
             this.NivelUsergroupBox.Name = "NivelUsergroupBox";
             this.NivelUsergroupBox.Size = new System.Drawing.Size(158, 36);
             this.NivelUsergroupBox.TabIndex = 37;
@@ -100,7 +100,7 @@
             this.groupBox1.Controls.Add(this.EliminarButton);
             this.groupBox1.Controls.Add(this.NuevoButton);
             this.groupBox1.Controls.Add(this.GuardarButton);
-            this.groupBox1.Location = new System.Drawing.Point(15, 216);
+            this.groupBox1.Location = new System.Drawing.Point(15, 223);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(257, 85);
             this.groupBox1.TabIndex = 36;
@@ -137,14 +137,14 @@
             // FechaIngresodateTimePicker
             // 
             this.FechaIngresodateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.FechaIngresodateTimePicker.Location = new System.Drawing.Point(99, 187);
+            this.FechaIngresodateTimePicker.Location = new System.Drawing.Point(99, 194);
             this.FechaIngresodateTimePicker.Name = "FechaIngresodateTimePicker";
             this.FechaIngresodateTimePicker.Size = new System.Drawing.Size(155, 20);
             this.FechaIngresodateTimePicker.TabIndex = 35;
             // 
             // ClaveTextBox
             // 
-            this.ClaveTextBox.Location = new System.Drawing.Point(99, 159);
+            this.ClaveTextBox.Location = new System.Drawing.Point(99, 166);
             this.ClaveTextBox.Name = "ClaveTextBox";
             this.ClaveTextBox.PasswordChar = '*';
             this.ClaveTextBox.Size = new System.Drawing.Size(155, 20);
@@ -152,28 +152,28 @@
             // 
             // UsuarioTextBox
             // 
-            this.UsuarioTextBox.Location = new System.Drawing.Point(99, 132);
+            this.UsuarioTextBox.Location = new System.Drawing.Point(99, 139);
             this.UsuarioTextBox.Name = "UsuarioTextBox";
             this.UsuarioTextBox.Size = new System.Drawing.Size(155, 20);
             this.UsuarioTextBox.TabIndex = 33;
             // 
             // EmailTextBox
             // 
-            this.EmailTextBox.Location = new System.Drawing.Point(99, 70);
+            this.EmailTextBox.Location = new System.Drawing.Point(99, 77);
             this.EmailTextBox.Name = "EmailTextBox";
             this.EmailTextBox.Size = new System.Drawing.Size(158, 20);
             this.EmailTextBox.TabIndex = 32;
             // 
             // NombreTextBox
             // 
-            this.NombreTextBox.Location = new System.Drawing.Point(99, 41);
+            this.NombreTextBox.Location = new System.Drawing.Point(99, 48);
             this.NombreTextBox.Name = "NombreTextBox";
             this.NombreTextBox.Size = new System.Drawing.Size(158, 20);
             this.NombreTextBox.TabIndex = 31;
             // 
             // IdnumericUpDown
             // 
-            this.IdnumericUpDown.Location = new System.Drawing.Point(99, 9);
+            this.IdnumericUpDown.Location = new System.Drawing.Point(99, 16);
             this.IdnumericUpDown.Name = "IdnumericUpDown";
             this.IdnumericUpDown.Size = new System.Drawing.Size(63, 20);
             this.IdnumericUpDown.TabIndex = 30;
@@ -181,7 +181,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 194);
+            this.label7.Location = new System.Drawing.Point(12, 201);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(75, 13);
             this.label7.TabIndex = 29;
@@ -190,7 +190,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 166);
+            this.label6.Location = new System.Drawing.Point(12, 173);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(34, 13);
             this.label6.TabIndex = 28;
@@ -199,7 +199,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 139);
+            this.label5.Location = new System.Drawing.Point(12, 146);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(43, 13);
             this.label5.TabIndex = 27;
@@ -208,7 +208,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 110);
+            this.label4.Location = new System.Drawing.Point(12, 117);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(70, 13);
             this.label4.TabIndex = 26;
@@ -217,7 +217,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 73);
+            this.label3.Location = new System.Drawing.Point(12, 80);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(32, 13);
             this.label3.TabIndex = 25;
@@ -226,7 +226,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 41);
+            this.label2.Location = new System.Drawing.Point(12, 48);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 24;
@@ -235,7 +235,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(12, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(18, 13);
             this.label1.TabIndex = 23;
@@ -248,7 +248,7 @@
             // BuscarButton
             // 
             this.BuscarButton.Image = global::ProyectoFinal.Properties.Resources.search_locate_find_icon_icons_com_67287__1_;
-            this.BuscarButton.Location = new System.Drawing.Point(183, 2);
+            this.BuscarButton.Location = new System.Drawing.Point(175, 7);
             this.BuscarButton.Name = "BuscarButton";
             this.BuscarButton.Size = new System.Drawing.Size(47, 35);
             this.BuscarButton.TabIndex = 38;
@@ -289,7 +289,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(282, 313);
+            this.ClientSize = new System.Drawing.Size(285, 319);
             this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.NivelUsergroupBox);
             this.Controls.Add(this.groupBox1);
@@ -307,7 +307,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "RegistroUsuario";
-            this.Text = "RegistroUsuario";
+            this.Text = "Registro Usuario";
             this.NivelUsergroupBox.ResumeLayout(false);
             this.NivelUsergroupBox.PerformLayout();
             this.groupBox1.ResumeLayout(false);

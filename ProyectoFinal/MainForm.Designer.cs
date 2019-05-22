@@ -28,24 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.MenuPrincipal = new System.Windows.Forms.MenuStrip();
             this.registroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroCargoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.MenuPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // MenuPrincipal
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MenuPrincipal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.registroToolStripMenuItem,
             this.consultaToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(491, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.MenuPrincipal.Location = new System.Drawing.Point(0, 0);
+            this.MenuPrincipal.Name = "MenuPrincipal";
+            this.MenuPrincipal.Size = new System.Drawing.Size(491, 24);
+            this.MenuPrincipal.TabIndex = 0;
+            this.MenuPrincipal.Text = "menuStrip1";
             // 
             // registroToolStripMenuItem
             // 
@@ -58,6 +58,7 @@
             // 
             // registroUsuarioToolStripMenuItem
             // 
+            this.registroUsuarioToolStripMenuItem.Image = global::ProyectoFinal.Properties.Resources.file_new_22051;
             this.registroUsuarioToolStripMenuItem.Name = "registroUsuarioToolStripMenuItem";
             this.registroUsuarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.registroUsuarioToolStripMenuItem.Text = "Registro Usuario";
@@ -65,9 +66,11 @@
             // 
             // registroCargoToolStripMenuItem
             // 
+            this.registroCargoToolStripMenuItem.Image = global::ProyectoFinal.Properties.Resources.file_new_22051;
             this.registroCargoToolStripMenuItem.Name = "registroCargoToolStripMenuItem";
             this.registroCargoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.registroCargoToolStripMenuItem.Text = "Registro Cargo";
+            this.registroCargoToolStripMenuItem.Click += new System.EventHandler(this.registroCargoToolStripMenuItem_Click);
             // 
             // consultaToolStripMenuItem
             // 
@@ -79,13 +82,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(491, 283);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Controls.Add(this.MenuPrincipal);
+            this.MainMenuStrip = this.MenuPrincipal;
             this.Name = "MainForm";
             this.Text = "Main Form";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.MenuPrincipal.ResumeLayout(false);
+            this.MenuPrincipal.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -93,7 +97,7 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip MenuPrincipal;
         private System.Windows.Forms.ToolStripMenuItem registroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registroUsuarioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registroCargoToolStripMenuItem;
