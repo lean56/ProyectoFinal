@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.BuscarButton = new System.Windows.Forms.Button();
-            this.NombreTextBox = new System.Windows.Forms.TextBox();
-            this.IdnumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.DescripcionTextBox = new System.Windows.Forms.TextBox();
+            this.CargoId = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -40,32 +40,32 @@
             this.NuevoButton = new System.Windows.Forms.Button();
             this.GuardarButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.IdnumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CargoId)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // BuscarButton
             // 
             this.BuscarButton.Image = global::ProyectoFinal.Properties.Resources.search_locate_find_icon_icons_com_67287__1_;
-            this.BuscarButton.Location = new System.Drawing.Point(192, 26);
+            this.BuscarButton.Location = new System.Drawing.Point(206, 26);
             this.BuscarButton.Name = "BuscarButton";
             this.BuscarButton.Size = new System.Drawing.Size(47, 35);
             this.BuscarButton.TabIndex = 46;
             this.BuscarButton.UseVisualStyleBackColor = true;
             // 
-            // NombreTextBox
+            // DescripcionTextBox
             // 
-            this.NombreTextBox.Location = new System.Drawing.Point(95, 81);
-            this.NombreTextBox.Name = "NombreTextBox";
-            this.NombreTextBox.Size = new System.Drawing.Size(158, 20);
-            this.NombreTextBox.TabIndex = 45;
+            this.DescripcionTextBox.Location = new System.Drawing.Point(95, 81);
+            this.DescripcionTextBox.Name = "DescripcionTextBox";
+            this.DescripcionTextBox.Size = new System.Drawing.Size(158, 20);
+            this.DescripcionTextBox.TabIndex = 45;
             // 
-            // IdnumericUpDown
+            // CargoId
             // 
-            this.IdnumericUpDown.Location = new System.Drawing.Point(95, 35);
-            this.IdnumericUpDown.Name = "IdnumericUpDown";
-            this.IdnumericUpDown.Size = new System.Drawing.Size(63, 20);
-            this.IdnumericUpDown.TabIndex = 44;
+            this.CargoId.Location = new System.Drawing.Point(95, 35);
+            this.CargoId.Name = "CargoId";
+            this.CargoId.Size = new System.Drawing.Size(63, 20);
+            this.CargoId.TabIndex = 44;
             // 
             // label1
             // 
@@ -162,12 +162,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.BuscarButton);
-            this.Controls.Add(this.NombreTextBox);
-            this.Controls.Add(this.IdnumericUpDown);
+            this.Controls.Add(this.DescripcionTextBox);
+            this.Controls.Add(this.CargoId);
             this.Controls.Add(this.label1);
             this.Name = "RegistroCargo";
             this.Text = "RegistroCargo";
-            ((System.ComponentModel.ISupportInitialize)(this.IdnumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CargoId)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -178,8 +178,8 @@
         #endregion
 
         private System.Windows.Forms.Button BuscarButton;
-        private System.Windows.Forms.TextBox NombreTextBox;
-        private System.Windows.Forms.NumericUpDown IdnumericUpDown;
+        private System.Windows.Forms.TextBox DescripcionTextBox;
+        private System.Windows.Forms.NumericUpDown CargoId;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label13;
