@@ -33,6 +33,7 @@
             this.registroUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroCargoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultaUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,7 +61,7 @@
             // 
             this.registroUsuarioToolStripMenuItem.Image = global::ProyectoFinal.Properties.Resources.file_new_22051;
             this.registroUsuarioToolStripMenuItem.Name = "registroUsuarioToolStripMenuItem";
-            this.registroUsuarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.registroUsuarioToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.registroUsuarioToolStripMenuItem.Text = "Registro Usuario";
             this.registroUsuarioToolStripMenuItem.Click += new System.EventHandler(this.registroUsuarioToolStripMenuItem_Click);
             // 
@@ -68,15 +69,24 @@
             // 
             this.registroCargoToolStripMenuItem.Image = global::ProyectoFinal.Properties.Resources.file_new_22051;
             this.registroCargoToolStripMenuItem.Name = "registroCargoToolStripMenuItem";
-            this.registroCargoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.registroCargoToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.registroCargoToolStripMenuItem.Text = "Registro Cargo";
             this.registroCargoToolStripMenuItem.Click += new System.EventHandler(this.registroCargoToolStripMenuItem_Click);
             // 
             // consultaToolStripMenuItem
             // 
+            this.consultaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.consultaUsuarioToolStripMenuItem});
             this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
             this.consultaToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.consultaToolStripMenuItem.Text = "Consulta";
+            // 
+            // consultaUsuarioToolStripMenuItem
+            // 
+            this.consultaUsuarioToolStripMenuItem.Name = "consultaUsuarioToolStripMenuItem";
+            this.consultaUsuarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.consultaUsuarioToolStripMenuItem.Text = "Consulta Usuario";
+            this.consultaUsuarioToolStripMenuItem.Click += new System.EventHandler(this.consultaUsuarioToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -102,6 +112,7 @@
         private System.Windows.Forms.ToolStripMenuItem registroUsuarioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registroCargoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultaUsuarioToolStripMenuItem;
     }
 }
 

@@ -9,5 +9,10 @@ namespace ProyectoFinal.DAL
 
         public Contexto() : base("ConStr")
         { }
+
+
+        public DbSet<Cargos> Cargo { get; set; }
+      
+
     }
 }

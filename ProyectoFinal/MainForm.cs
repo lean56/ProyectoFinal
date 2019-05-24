@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ProyectoFinal.UI.Registro;
+using ProyectoFinal.UI.Consulta;
 
 namespace ProyectoFinal
 {
@@ -30,6 +31,10 @@ namespace ProyectoFinal
             rc.Show();
         }
 
-     
+        private void consultaUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConsultaUsuario cu = new ConsultaUsuario();
+            cu.Show();
+        }
     }
 }

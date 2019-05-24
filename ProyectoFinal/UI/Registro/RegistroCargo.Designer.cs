@@ -52,6 +52,7 @@
             this.BuscarButton.Size = new System.Drawing.Size(47, 35);
             this.BuscarButton.TabIndex = 46;
             this.BuscarButton.UseVisualStyleBackColor = true;
+            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
             // DescripcionTextBox
             // 
@@ -126,6 +127,7 @@
             this.EliminarButton.Size = new System.Drawing.Size(75, 49);
             this.EliminarButton.TabIndex = 23;
             this.EliminarButton.UseVisualStyleBackColor = true;
+            this.EliminarButton.Click += new System.EventHandler(this.EliminarButton_Click);
             // 
             // NuevoButton
             // 
@@ -135,6 +137,7 @@
             this.NuevoButton.Size = new System.Drawing.Size(75, 49);
             this.NuevoButton.TabIndex = 22;
             this.NuevoButton.UseVisualStyleBackColor = true;
+            this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
             // 
             // GuardarButton
             // 
@@ -144,6 +147,7 @@
             this.GuardarButton.Size = new System.Drawing.Size(75, 49);
             this.GuardarButton.TabIndex = 21;
             this.GuardarButton.UseVisualStyleBackColor = true;
+            this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click);
             // 
             // label2
             // 
