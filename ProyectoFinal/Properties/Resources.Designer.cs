@@ -83,6 +83,26 @@ namespace ProyectoFinal.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap preview_search_find_locate_1551 {
+            get {
+                object obj = ResourceManager.GetObject("preview_search_find_locate_1551", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap preview_search_find_locate_1551__1_ {
+            get {
+                object obj = ResourceManager.GetObject("preview_search_find_locate_1551 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap save_21411 {
             get {
                 object obj = ResourceManager.GetObject("save_21411", resourceCulture);
@@ -93,9 +113,29 @@ namespace ProyectoFinal.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Search_find_3519 {
+            get {
+                object obj = ResourceManager.GetObject("Search_find_3519", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap search_locate_find_icon_icons_com_67287__1_ {
             get {
                 object obj = ResourceManager.GetObject("search_locate_find_icon-icons.com_67287 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap view_search_find_9565 {
+            get {
+                object obj = ResourceManager.GetObject("view_search_find_9565", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

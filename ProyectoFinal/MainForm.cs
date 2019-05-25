@@ -36,5 +36,11 @@ namespace ProyectoFinal
             ConsultaUsuario cu = new ConsultaUsuario();
             cu.Show();
         }
+
+        private void consultaCargoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConsultaCargo cc = new ConsultaCargo();
+            cc.Show();
+        }
     }
 }

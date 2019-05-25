@@ -96,7 +96,6 @@ namespace ProyectoFinal.UI.Registro
                 paso = false;
             }
 
-
             if (UserradioButton.Checked == false && AdminradioButton.Checked == false)
             {
                 MyErrorProvider.SetError(NivelUsergroupBox, "Debe elegir un tipo de usuario");

@@ -170,7 +170,7 @@
             this.Controls.Add(this.CargoId);
             this.Controls.Add(this.label1);
             this.Name = "RegistroCargo";
-            this.Text = "RegistroCargo";
+            this.Text = "Registro Cargo";
             ((System.ComponentModel.ISupportInitialize)(this.CargoId)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

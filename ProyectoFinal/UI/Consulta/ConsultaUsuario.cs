@@ -19,11 +19,35 @@ namespace ProyectoFinal.UI.Consulta
             InitializeComponent();
         }
 
-        private void ConsultaUserbutton_Click(object sender, EventArgs e)
+        private bool Validar()
+        {
+            bool paso = true;
+            MyErrorProvider.Clear();
+
+            if (FiltroComboBox.Text == string.Empty)
+            {
+                MyErrorProvider.SetError(FiltroComboBox, "No a selecionado ningun filtro");
+                FiltroComboBox.Focus();
+                paso = false;
+            }
+
+            if (CristerioTextBox.Text == string.Empty)
+            {
+                MyErrorProvider.SetError(CristerioTextBox, "El campo Criterio esta vacio");
+                CristerioTextBox.Focus();
+                paso = false;
+            }
+            return paso;
+        }
+
+        private void ConsultaUserbutton_Click_1(object sender, EventArgs e)
         {
             var listado = new List<Usuarios>();
 
-            if(CristerioTextBox.Text.Trim().Length > 0)
+            if (!Validar())
+                return;
+
+            if (CristerioTextBox.Text.Trim().Length > 0)
             {
                 switch(FiltroComboBox.SelectedIndex)
                 {
