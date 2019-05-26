@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.BuscarButton = new System.Windows.Forms.Button();
             this.DescripcionTextBox = new System.Windows.Forms.TextBox();
-            this.CargoId = new System.Windows.Forms.NumericUpDown();
+            this.CargoIdnumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -40,8 +41,10 @@
             this.NuevoButton = new System.Windows.Forms.Button();
             this.GuardarButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.CargoId)).BeginInit();
+            this.MyErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.CargoIdnumericUpDown)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // BuscarButton
@@ -61,12 +64,12 @@
             this.DescripcionTextBox.Size = new System.Drawing.Size(158, 20);
             this.DescripcionTextBox.TabIndex = 45;
             // 
-            // CargoId
+            // CargoIdnumericUpDown
             // 
-            this.CargoId.Location = new System.Drawing.Point(95, 35);
-            this.CargoId.Name = "CargoId";
-            this.CargoId.Size = new System.Drawing.Size(63, 20);
-            this.CargoId.TabIndex = 44;
+            this.CargoIdnumericUpDown.Location = new System.Drawing.Point(95, 35);
+            this.CargoIdnumericUpDown.Name = "CargoIdnumericUpDown";
+            this.CargoIdnumericUpDown.Size = new System.Drawing.Size(63, 20);
+            this.CargoIdnumericUpDown.TabIndex = 44;
             // 
             // label1
             // 
@@ -158,6 +161,10 @@
             this.label2.TabIndex = 48;
             this.label2.Text = "Descripcion";
             // 
+            // MyErrorProvider
+            // 
+            this.MyErrorProvider.ContainerControl = this;
+            // 
             // RegistroCargo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -167,13 +174,14 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.DescripcionTextBox);
-            this.Controls.Add(this.CargoId);
+            this.Controls.Add(this.CargoIdnumericUpDown);
             this.Controls.Add(this.label1);
             this.Name = "RegistroCargo";
             this.Text = "Registro Cargo";
-            ((System.ComponentModel.ISupportInitialize)(this.CargoId)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CargoIdnumericUpDown)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -183,7 +191,7 @@
 
         private System.Windows.Forms.Button BuscarButton;
         private System.Windows.Forms.TextBox DescripcionTextBox;
-        private System.Windows.Forms.NumericUpDown CargoId;
+        private System.Windows.Forms.NumericUpDown CargoIdnumericUpDown;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label13;
@@ -193,5 +201,6 @@
         private System.Windows.Forms.Button NuevoButton;
         private System.Windows.Forms.Button GuardarButton;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ErrorProvider MyErrorProvider;
     }
 }

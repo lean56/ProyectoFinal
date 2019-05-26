@@ -22,7 +22,7 @@ namespace ProyectoFinal.UI.Registro
 
         private void Limpiar()
         {
-            CargoId.Value = 0;
+            CargoIdnumericUpDown.Value = 0;
             DescripcionTextBox.Text = string.Empty;
         }
 
@@ -30,20 +30,20 @@ namespace ProyectoFinal.UI.Registro
         private Cargos LlenarClase()
         {
             Cargos cargo = new Cargos();
-            cargo.CargoId = Convert.ToInt32(CargoId.Value);
+            cargo.CargoId = Convert.ToInt32(CargoIdnumericUpDown.Value);
             cargo.Descripcion = DescripcionTextBox.Text;
             return cargo;
         }
 
         private void LlenaCampo(Cargos cargo)
         {
-            CargoId.Value = cargo.CargoId;
+            CargoIdnumericUpDown.Value = cargo.CargoId;
             DescripcionTextBox.Text = cargo.Descripcion;           
         }
 
         private bool ExisteEnLaBaseDeDatos()
         {
-            Cargos cargo = CargoBLL.Buscar((int)CargoId.Value);
+            Cargos cargo = CargoBLL.Buscar((int)CargoIdnumericUpDown.Value);
 
             return (cargo != null);
         }
@@ -54,6 +54,27 @@ namespace ProyectoFinal.UI.Registro
             Limpiar();
         }
 
+        private bool Validar()
+        {
+            bool paso = true;
+            MyErrorProvider.Clear();
+
+            if (CargoIdnumericUpDown.Text == string.Empty)
+            {
+                MyErrorProvider.SetError(CargoIdnumericUpDown, "El campo Id no puede estar vacio");
+                CargoIdnumericUpDown.Focus();
+                paso = false;
+            }
+
+            if (DescripcionTextBox.Text == string.Empty)
+            {
+                MyErrorProvider.SetError(DescripcionTextBox, "El campo Descripcion no puede estar vacio");
+                DescripcionTextBox.Focus();
+                paso = false;
+            }
+
+            return paso;
+        }
 
 
         private void GuardarButton_Click(object sender, EventArgs e)
@@ -61,13 +82,13 @@ namespace ProyectoFinal.UI.Registro
             Cargos cargo;
             bool paso = false;
 
-            //if (!Validar())
-              //  return;
+            if (!Validar())
+                return;
 
             cargo = LlenarClase();
             Limpiar();
 
-            if (CargoId.Value == 0)
+            if (CargoIdnumericUpDown.Value == 0)
                 paso = CargoBLL.Guardar(cargo);
             else
             {
@@ -90,10 +111,10 @@ namespace ProyectoFinal.UI.Registro
 
         private void EliminarButton_Click(object sender, EventArgs e)
         {
-          //  MyErrorProvider.Clear();
+            MyErrorProvider.Clear();
 
             int id;
-            int.TryParse(CargoId.Text, out id);
+            int.TryParse(CargoIdnumericUpDown.Text, out id);
             Limpiar();
 
             if (CargoBLL.Eliminar(id))
@@ -101,15 +122,15 @@ namespace ProyectoFinal.UI.Registro
                 MessageBox.Show("Elimino el ID: " + id + "", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Dispose();
             }
-           // else
-               // MyErrorProvider.SetError(IdnumericUpDown, "Id no Existe");
+            else
+                MyErrorProvider.SetError(CargoIdnumericUpDown, "Id no Existe");
         }
 
         private void BuscarButton_Click(object sender, EventArgs e)
         {
             int id;
             Cargos cargo = new Cargos();
-            int.TryParse(CargoId.Text, out id);
+            int.TryParse(CargoIdnumericUpDown.Text, out id);
 
             Limpiar();
 
