@@ -75,7 +75,7 @@ namespace ProyectoFinal.UI.Registro
             bool paso = true;
             MyErrorProvider.Clear();
 
-            if (IdnumericUpDown.Text == string.Empty)
+            if (IdnumericUpDown.Value == 0)
             {
                 MyErrorProvider.SetError(IdnumericUpDown, "El campo Id no puede estar vacio");
                 IdnumericUpDown.Focus();
@@ -130,8 +130,7 @@ namespace ProyectoFinal.UI.Registro
                 return;
 
             usuario = LlenarClase();
-            Limpiar();
-
+          
             if (IdnumericUpDown.Value == 0)
                 paso = UsuarioBLL.Guardar(usuario);
             else
@@ -143,7 +142,7 @@ namespace ProyectoFinal.UI.Registro
                 }
                 paso = UsuarioBLL.Modificar(usuario);
             }
-
+            Limpiar();
             if (paso)
             {
                 MessageBox.Show("Guardado!!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
